@@ -36,4 +36,3 @@ oxygen_generator_rating = get_filtered_out(operator.ge)
 co2_scrubber_rating = get_filtered_out(operator.lt)
 print(oxygen_generator_rating, co2_scrubber_rating)
 print(oxygen_generator_rating * co2_scrubber_rating)
-

@@ -49,5 +49,9 @@ for line in test_data:
         for x, y in zip(*get_diagonal_ranges(x1, y1, x2, y2)):
             line_matrix[y][x] += 1
 
-result = sum(itertools.chain.from_iterable((int(val >= 2) for val in column) for column in line_matrix))
+result = sum(
+    itertools.chain.from_iterable(
+        (int(val >= 2) for val in column) for column in line_matrix
+    )
+)
 print(f"{result=}")
